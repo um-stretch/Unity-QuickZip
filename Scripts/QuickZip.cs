@@ -20,7 +20,10 @@ public class QuickZip
                 AssetDatabase.DeleteAsset(filePath);
                 AssetDatabase.Refresh();
             }
-            catch { }
+            catch (System.Exception err)
+            {
+                LogError(err);
+            }
         }
     }
 
@@ -39,7 +42,15 @@ public class QuickZip
                 AssetDatabase.DeleteAsset(filePath);
                 AssetDatabase.Refresh();
             }
-            catch { }
+            catch (System.Exception err)
+            {
+                LogError(err);
+            }
         }
+    }
+
+    private static void LogError(System.Exception err)
+    {
+        Debug.LogError($"QuickZip action failed: {err}");
     }
 }
