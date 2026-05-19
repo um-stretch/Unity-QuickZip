@@ -1,7 +1,7 @@
 {
   "name": "com.quickzip",
   "displayName": "Quick Zip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "6000.0",
   "description": "A QuickMenu for .zip files in Unity",
   "author": { "name": "um_stretch" },
